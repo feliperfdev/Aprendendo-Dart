@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void passwordValidation(String senha) {
   bool flagUpper = false,
       flagLower = false,
@@ -33,6 +35,11 @@ void passwordValidation(String senha) {
 }
 
 void main() {
-  String senha = 'felK1ipe';
-  passwordValidation(senha);
+  int val = 0;
+  while (val <= 1000) {
+    stdout.write('Digite uma senha: ');
+    String senha = stdin.readLineSync();
+    passwordValidation(senha);
+    val++;
+  }
 }
