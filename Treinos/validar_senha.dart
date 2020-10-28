@@ -6,20 +6,25 @@ void passwordValidation(String senha) {
       flagNumber = false,
       flagSpace = false;
 
+  bool isUpper = senha.contains(new RegExp(r'[A-Z]'));
+  bool isLower = senha.contains(new RegExp(r'[a-z]'));
+  bool isNumeric = senha.contains(new RegExp(r'[0-9]'));
+  bool isSpace = senha.contains(' ');
+
   if (senha.length >= 6 && senha.length <= 42) {
-    if (senha.contains(' ')) {
+    if (isSpace) {
       // verifica se há espaços em branco
       flagSpace = true;
     }
-    if (senha.contains(new RegExp(r'[A-Z]'))) {
+    if (isUpper) {
       // verifica se há caracteres em caixa alta
       flagUpper = true;
     }
-    if (senha.contains(new RegExp(r'[a-z]'))) {
+    if (isLower) {
       // verifica se há caracteres em caixa baixa
       flagLower = true;
     }
-    if (senha.contains(new RegExp(r'[0-9]'))) {
+    if (isNumeric) {
       // verifica se há números
       flagNumber = true;
     }
