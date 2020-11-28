@@ -1,5 +1,3 @@
-import 'dart:io';
-
 class Pokemon {
   // Atríbutos
   String nome;
@@ -28,11 +26,11 @@ void mostrarDadosPokemon(Pokemon pkmn) {
 }
 
 main() {
-  Pokemon meuPokemon = new Pokemon();
+  Pokemon meuPokemon = new Pokemon(); // objeto
   meuPokemon.nome = 'Chimchar';
-  meuPokemon.quant_evo = 2;
   meuPokemon.tipos = ['Fogo', 'Lutador'];
   meuPokemon.evolucoes = ['Monferno', 'Infernape'];
+  meuPokemon.quant_evo = meuPokemon.evolucoes.length;
 
   mostrarDadosPokemon(meuPokemon);
 
