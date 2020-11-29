@@ -1,3 +1,5 @@
+import 'dart:collection';
+
 class Pokemon {
   // Atríbutos
   String nome;
