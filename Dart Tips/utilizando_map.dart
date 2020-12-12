@@ -1,4 +1,5 @@
 import 'dart:math';
+import 'capitalString.dart';
 
 int square(int value) {
   return value * value;
@@ -39,4 +40,14 @@ main() {
   const quadrados = [1, 4, 9, 16, 25, 36, 49, 64, 81];
   var square_root = quadrados.map((val) => sqrt(val)).toList();
   print(square_root);
+
+  List<String> minusculas = ['dart', 'javascript', 'csharp', 'java'];
+  var maiusculas = minusculas.map((m) => m.toUpperCase());
+  print(maiusculas);
+
+  List<String> minusculas_2 = ['dart', 'javascript', 'csharp', 'java'];
+  var capitalStr = minusculas_2.map((m) => capitalString(m));
+  print(capitalStr);
+
+  print('\n');
 }
