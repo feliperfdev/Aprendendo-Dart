@@ -1,4 +1,4 @@
-void showData(String name, {int age, double height}) {
+void showData(String name /*{int age, double height}*/) {
 // Quando atríbutos de uma função são colocados dentro de chaves {}, eles passam a ser considerados...
 //... opcionais.
   print('Seu nome é $name');
@@ -12,13 +12,13 @@ void showData(String name, {int age, double height}) {
   //   print('Sua altura é ${height}');
   // }
 
-  var novaIdade = age ?? 0;
-  var novaAltura = height ?? 0;
-  print('Sua idade é $novaIdade anos');
-  print('Sua altura é $novaAltura metros');
+  // var novaIdade = age ?? 0;
+  // var novaAltura = height ?? 0;
+  // print('Sua idade é $novaIdade anos');
+  // print('Sua altura é $novaAltura metros');
 
-  print(age);
-  print(height);
+  // print(age);
+  // print(height);
 
   // O operador '??' verifica se a variável é nula. Caso não seja,
   // será setado como valor padão o 0.
@@ -38,7 +38,7 @@ main() {
   altura = 1.80;
 
   print('Passando todos os parâmetros, inclusive os opcionais:');
-  showData(nome, age: idade, height: altura);
+  // showData(nome, age: idade, height: altura);
   // quando se trata de passar valores para variáveis opcionais, deve-se utilizar uma combinação...
   // ... parecida com 'chave-valor'. Assim, se utiliza o nome da variável anônima como chave, e o que...
   // ... se quer passar como o valor. Síntaxe --> variavel_anonima: valor (No ex -> age: idade)

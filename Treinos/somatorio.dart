@@ -4,7 +4,7 @@ void somatorio(int valor_ex) {
   int i = 0;
   int cont = 0;
   while (cont != 1) {
-    var numero = int.parse(stdin.readLineSync()); // ler valores inteiros
+    var numero = int.parse(stdin.readLineSync().toString()); // ler valores inteiros
     if (numero == valor_ex) {
       i++;
     } else if (numero == 0) {
@@ -21,6 +21,6 @@ void somatorio(int valor_ex) {
 
 main() {
   stdout.write('Informe o valor de exemplo: ');
-  var numero = int.parse(stdin.readLineSync());
+  var numero = int.parse(stdin.readLineSync().toString());
   somatorio(numero);
 }

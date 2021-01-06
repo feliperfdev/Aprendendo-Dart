@@ -14,7 +14,7 @@ int fatorial(int number) {
     return 1;
 }
 
-int somaValoresLista(List<num> lista) {
+int somaValoresLista(List<int> lista) {
   int soma = 0;
   for (int i = 0; i < lista.length; i++) {
     soma += lista.elementAt(i);

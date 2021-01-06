@@ -13,7 +13,7 @@ void dobraSalario(double salario) {
 
 main() {
   stdout.write('Digite seu salário: ');
-  double salario = double.parse(stdin.readLineSync());
+  double salario = double.parse(stdin.readLineSync().toString());
 
   calcularSalario(salario, dobraSalario); // forma normal
 }

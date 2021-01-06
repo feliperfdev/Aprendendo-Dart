@@ -43,7 +43,7 @@ void main() {
   int val = 0;
   while (val <= 1000) {
     stdout.write('Digite uma senha: ');
-    String senha = stdin.readLineSync();
+    String senha = stdin.readLineSync().toString();
     passwordValidation(senha);
     val++;
   }
