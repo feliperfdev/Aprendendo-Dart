@@ -1,3 +1,5 @@
+import 'dart:io';
+
 int fibonacci(int num) {
   int fib;
   if (num == 1 || num == 2) {
@@ -10,10 +12,6 @@ int fibonacci(int num) {
 
 void main() {
   int fib_value;
-  fib_value = 8;
-  print(fibonacci(fib_value));
-  fib_value = 9;
-  print(fibonacci(fib_value));
-  fib_value = 10;
+  fib_value = int.parse(stdin.readLineSync().toString());
   print(fibonacci(fib_value));
 }
